@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1= title
+    div.newemployee
+        form( method="post")
+            div
+                div
+                    span.label Barang :
+                    input(type="text", name="barang", id="editEmployeeTitle")
+                div
+                    span.label Harga :
+                    input(type="text", name="harga", id="editEmployeeName")
+                div#editEmployeeSubmit
+                    input(type="submit", value="Save")
+        a(href="/")!= "Back to Fabelio List"
